@@ -20,7 +20,7 @@ public class SecondActivity extends AppCompatActivity {
         viewHello = findViewById(R.id.viewHello);
         botaoVoltar = findViewById(R.id.botaoVoltar);
 
-        viewHello.setText(getIntent().getStringExtra("nome"));
+        viewHello.setText(String.format("Olá %s!", getIntent().getStringExtra("nome")));
 
         acoesComponentes();
     }
